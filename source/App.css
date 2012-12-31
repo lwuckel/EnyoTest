@@ -1,0 +1,39 @@
+/* set the width and some basic styling for each panel */
+.app-panels > * {
+    width: 300px;
+    background-color: #EAEAEA;
+    box-shadow: -4px -4px 4px rgba(0,0,0,0.3);
+}
+
+/* on small devices, make each panel fit to the app width */
+@media all and (max-width: 800px) {
+    .app-panels > * {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+.list-sample {
+	background-color: gray;
+}
+.list-sample-list {
+	width: 50%;
+	min-width: 300px;
+	max-width: 600px;
+	margin: auto;
+	background-color: #eee;
+}
+.list-sample-item {
+	border: 1px solid silver;
+	padding: 18px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.list-sample-index {
+	float: right;
+	font-size: 16px;
+	font-weight: normal;
+}
+.list-sample-selected {
+	background-color: #c4e3fe;
+}
